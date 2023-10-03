@@ -1,0 +1,49 @@
+/*Resetting to the default styles*/
+
+body{
+    background-color: #dfb6b2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div section.one,main{
+    color: #190019;
+    padding: 0.5rem 1.5rem;
+    background-color: #dfb6b2;
+    border-bottom: 1px solid rgba(25, 0, 25,0.2);
+    
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #190019;
+   
+}
+
+nav a:hover{
+    background-color: #190019;
+    color: #dfb6b2;
+    padding: 0.5rem 1rem;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+h3 a:hover{
+    background-color: #dfb6b2;
+    color: #190019;
+    padding: 0;
+}
+
+.main{
+    border: none;
+}
+
+/*Styling the body*/
+
+.card-img{
+    height: 20%;
+}
