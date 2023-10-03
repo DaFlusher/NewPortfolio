@@ -23,6 +23,11 @@ nav{
    
 }
 
+/*Hidding the div.web-nav*/
+div.web-nav{
+    display: none;
+}
+
 nav a, h3 a{
     text-decoration: none;
     color: #dfb6b2;
@@ -35,6 +40,7 @@ nav a:hover{
 
 nav h3{
     font-family: 'Tangerine',cursive;
+    text-wrap: balance  ;
 
 }
 
@@ -158,8 +164,32 @@ div.fonts{
 
 /*Adding Responsive Styles*/
 
-@media screen and (min-width:780px) {
+/*Removing the hamburger menu for 2column layout*/
+@media screen and (min-width:780px) and (max-width:960px){
 
+    nav div.sidenav,.open{
+        display: none;
+    }
+
+    div.web-nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0.5rem;
+    
+    }
+
+    div.web-nav a{
+        margin: 0 0.5rem;
+    }
+
+    nav{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width:780px) { 
+
+    /*Styling the rest of the page*/
     .grid-container{
         display: grid;
         grid-template-columns: 1.2fr 1fr;
@@ -169,6 +199,7 @@ div.fonts{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    
     }
 
     section.one  .intro-text h1{
@@ -206,18 +237,23 @@ div.fonts{
 }
 
 @media screen and (min-width:960px) {
+
     div.grid-container{
         display: grid;
         grid-template-columns: 1.2fr 1fr 1fr;
     }
 
-    section.three{
+    div section.three{
         grid-column: 3/4;
         display: grid;
         grid-template-columns: 1fr;
         padding: 0;
+    
     }
 
+    div section.one{
+        padding: 1rem 3rem;
+    }
     section.three .contact{
         padding: 1rem 2rem;
     }
@@ -240,5 +276,28 @@ div.fonts{
 
     .footer-web{
         visibility: visible;
+    }
+}
+
+/*Removing the Hamburger menu*/
+@media screen and (min-width:1200px) {
+    
+    nav div.sidenav,.open{
+        display: none;
+    }
+
+    div.web-nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 3rem;
+    
+    }
+
+    div.web-nav a{
+        margin: 0 0.5rem;
+    }
+
+    nav{
+        justify-content: flex-start;
     }
 }
