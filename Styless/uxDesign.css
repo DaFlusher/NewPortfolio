@@ -121,10 +121,11 @@ footer{
 
 footer h3{
     margin: 0;
+    padding: 0 0.875rem;
 }
 
 footer p{
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
 footer .contact{
@@ -145,6 +146,7 @@ div.fonts{
     color: #190019;
     text-decoration: none;
     justify-content: space-between;
+    padding: 0 0.875rem;
 
 }
 
