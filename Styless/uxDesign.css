@@ -115,7 +115,7 @@ main.change h1{
 /*Styling the Footer mobile */
 footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items:center;
 }
 
@@ -125,6 +125,10 @@ footer h3{
 
 footer p{
     font-size: 0.875rem;
+}
+
+footer .contact{
+    margin: 0 3rem;
 }
 /*Styling the Social media links*/
 
